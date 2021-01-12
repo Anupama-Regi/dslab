@@ -88,11 +88,11 @@ void insertpos()
 	else
 	{
 		int p;
-		printf("\n Enter the position between 0 and %d: ",c+2);
+		printf("\n Enter the position: ");
 		scanf("%d",&p);
 		if(p>c+1 || p<1)
 		{
-			printf("\nEnter a position between 0 and %d: ",c+2);
+			printf("\nEnter a position: ");
 		}
 		for(i=1;i<p-1;i++)
 		{
@@ -185,7 +185,7 @@ void deletepos()
 		temp=head;
 		if(p>c || p<1)
 		{
-			printf("\nEnter a position between 0 and %d: ",c+1);
+			printf("\nEnter a position: ");
 		}
 		for(i=1;i<p-1;i++)
 		{
@@ -257,11 +257,11 @@ void search()
 		}
 		if(e1>0)
 		{
-		printf("\n %d present and occures %d times",e,e1);
+		printf("\nThe element %d present and occures %d times",e,e1);
 		}
 		else
 		{
-		printf("\n %d not present",e);
+		printf("\nThe element %d not present",e);
 		}
 	}
 }
