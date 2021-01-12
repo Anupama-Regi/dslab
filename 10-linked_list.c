@@ -49,7 +49,6 @@ void main()
 }
 
 
-
 void insertbeg()
 {
 	newnode=(struct node *)malloc(sizeof(struct node));
