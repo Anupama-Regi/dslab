@@ -75,6 +75,7 @@ void insertbeg()
 
 void insertpos()
 {
+	temp=head;
 	newnode=(struct node *)malloc(sizeof(struct node));
 	printf("\nEnter a number : ");
 	scanf("%d",&newnode->data);
@@ -194,16 +195,14 @@ void deletepos()
 		{
 			element=head->data;
 			head=head->next;
-
 		}
 		else
 		{
 			element=(temp->next)->data;
 			temp->next=(temp->next)->next;
-
 		}
 		}
-	printf("\nDeleted element is ",element);
+	printf("\nDeleted element is %d",element);
 	c--;
 	}
 }
@@ -282,9 +281,9 @@ void display()
 		temp=head;
 		while(temp->next!=NULL)
 		{
-		printf("\n%d",temp->data);
+		printf("\t%d",temp->data);
 		temp=temp->next;
 		}
-		printf("\n%d",temp->data);
+		printf("\t%d",temp->data);
 	}
 }
