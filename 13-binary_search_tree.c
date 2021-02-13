@@ -47,7 +47,6 @@ int main()
 			printf("\nEnter data to be deleted : ");
 			scanf("%d",&d);
 			root=delete(root,d);
-			
 			break;
 		case 3: 
 			if(root==NULL)
